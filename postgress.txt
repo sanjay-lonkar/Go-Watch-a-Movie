@@ -1,0 +1,9 @@
+Master Password: go-react-training-postgress
+
+Created database using schema file - DBeaver - Database - Execute Script
+
+==============================
+
+Error while opening pgAdmin:
+
+Edit the pg_hba.conf located in the data folder. At the bottom, where it starts: local all all scram-sha-256 change all instances of "scram-sha-256" to "trust", like... local all all trust Save the file and you should be able to get right in.
